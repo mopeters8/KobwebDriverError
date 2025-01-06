@@ -1,0 +1,14 @@
+site:
+  title: "Drivererror"
+
+server:
+  files:
+    dev:
+      contentRoot: "build/processedResources/js/main/public"
+      script: "build/kotlin-webpack/js/developmentExecutable/drivererror.js"
+      api: "build/libs/drivererror.jar"
+    prod:
+      script: "build/kotlin-webpack/js/productionExecutable/drivererror.js"
+      siteRoot: ".kobweb/site"
+
+  port: 8080
